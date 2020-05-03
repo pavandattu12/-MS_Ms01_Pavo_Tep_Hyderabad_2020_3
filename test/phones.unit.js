@@ -9,7 +9,7 @@ describe("phones.js", function () {
   describe("androidOS()", function () {
       it("returns random androidOS", function () {
           sinon.stub(faker.phones, 'androidOS').returns('Realme 5S');
-          var androidOS( = faker.phones.androidOS(();
+          var androidOS = faker.phones.androidOS();
 
           assert.equal(androidOS, 'Realme 5S');
           faker.phones.androidOS.restore();
